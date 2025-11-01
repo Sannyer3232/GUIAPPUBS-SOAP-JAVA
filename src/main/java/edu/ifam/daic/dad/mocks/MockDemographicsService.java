@@ -4,34 +4,34 @@ import edu.ifam.daic.dad.DTO.DadosDemograficosDTO;
 
 public class MockDemographicsService {
 
-    public DadosDemograficosDTO getDados(String uf) {
+    public DadosDemograficosDTO getDados(String municipio) {
         // Simula uma chamada de rede
         try { Thread.sleep(200); } catch (Exception e) {}
 
-        if (uf.equals("AM")) {
-            // Dados fictícios para o Amazonas
+        if (municipio.equals("Manaus")) {
+            // Dados fictícios para Manaus
             return new DadosDemograficosDTO(
-                    4207714,  // Pop Total
-                    2112700,  // Homens
-                    2095014,  // Mulheres
-                    800000,   // 0-10
-                    850000,   // 11-20
-                    900000,   // 21-30
-                    750000,   // 31-40
-                    907714    // 41+
+                    2219580,  // Pop Total
+                    1090000,  // Homens
+                    1129580,  // Mulheres
+                    300000,   // 0-10
+                    350000,   // 11-20
+                    400000,   // 21-30
+                    500000,   // 31-40
+                    669580    // 41+
             );
         }
-        if (uf.equals("AC")) {
-            // Dados fictícios para o Acre
+        if (municipio.equals("Rio Branco")) {
+            // Dados fictícios para Rio Branco
             return new DadosDemograficosDTO(
-                    894470,   // Pop Total
-                    447200,   // Homens
-                    447270,   // Mulheres
-                    150000,   // 0-10
-                    160000,   // 11-20
-                    170000,   // 21-30
-                    200000,   // 31-40
-                    214470    // 41+
+                    413418,   // Pop Total
+                    200000,   // Homens
+                    213418,   // Mulheres
+                    80000,    // 0-10
+                    85000,    // 11-20
+                    90000,    // 21-30
+                    80000,    // 31-40
+                    78418     // 41+
             );
         }
         // Retorno padrão
